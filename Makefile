@@ -10,4 +10,4 @@ copy_ipycli:
 	@cat $(IPYTHON_DIR)/kernel.js >> lib/ipython-browser.js
 
 browserify:
-	@browserify --ig -t brfs browser.js > ipy_node.js
+	@browserify --ig -t brfs ./browser.js > ipy_node.js

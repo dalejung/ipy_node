@@ -9,8 +9,3 @@ ipy_node = {
 }
 
 module.exports = ipy_node;
-
-// Expose these globally
-d3 = require('d3');
-Q = require('q');
-Q.longStackSupport = true;
