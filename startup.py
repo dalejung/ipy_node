@@ -10,7 +10,22 @@ def dataframe_json(df):
     data['__repr__'] = repr(df)
     return json.dumps(data)
 
-def to_json(obj):
+def _to_json(obj):
     if isinstance(obj, pd.DataFrame):
-        return JSON(dataframe_json(obj))
-    return JSON(json.dumps(obj))
+        return dataframe_json(obj)
+    if isinstance(obj, dict):
+        jdict = {}
+        for k, v in obj.iteritems():
+            jdict[k] = _to_json(v)
+        return json_dict(jdict)
+
+    return json.dumps(obj)
+
+def json_dict(dct):
+    items = []
+    for k, v in dct.iteritems():
+        items.append("\"{k}\":{v}".format(k=k, v=v))
+    return "{" + ','.join(items) + "}" 
+
+def to_json(obj):
+    return JSON(_to_json(obj));
