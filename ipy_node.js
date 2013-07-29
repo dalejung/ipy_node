@@ -167,7 +167,7 @@ $ = require('jquery-browserify');
 $.support.cors = true;
 module.exports = new Function(content + ";IPython.$ = $;return IPython;")();
 
-})(require("__browserify_process"),self,require("__browserify_Buffer").Buffer,"/lib/ipython-browserify.js","/lib")
+})(require("__browserify_process"),self,require("__browserify_Buffer").Buffer,"/lib/ipython-browserify-brfs.js","/lib")
 },{"__browserify_Buffer":22,"__browserify_process":23,"fs":8,"jquery-browserify":24,"path":9}],5:[function(require,module,exports){
 (function(process,global,Buffer,__filename,__dirname){var IPython = require('./ipython.js')
 var fs = require('fs');
@@ -295,7 +295,7 @@ Kernel.prototype.setup_iopub = function() {
 
 module.exports = Kernel;
 
-})(require("__browserify_process"),self,require("__browserify_Buffer").Buffer,"/lib/kernel.js","/lib")
+})(require("__browserify_process"),self,require("__browserify_Buffer").Buffer,"/lib/kernel-brfs.js","/lib")
 },{"./callbacks.js":3,"./ipython.js":4,"__browserify_Buffer":22,"__browserify_process":23,"fs":8,"inode":21,"q":25}],6:[function(require,module,exports){
 (function(process,global,Buffer,__filename,__dirname){// UTILITY
 var util = require('util');

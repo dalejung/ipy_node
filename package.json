@@ -3,7 +3,8 @@
   "main" : "index.js",
   "browser" :  {
     "index.js" : "browser.js", 
-    "./lib/ipython.js" : "./lib/ipython-browserify.js",
+    "./lib/ipython.js" : "./lib/ipython-browserify-brfs.js",
+    "./lib/kernel.js" : "./lib/kernel-brfs.js",
     "inode" : false
   }
 }
