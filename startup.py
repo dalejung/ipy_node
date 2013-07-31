@@ -19,6 +19,9 @@ def _to_json(obj):
             jdict[k] = _to_json(v)
         return json_dict(jdict)
 
+    if hasattr(obj, 'to_json'):
+        return obj.to_json()
+
     return json.dumps(obj)
 
 def json_dict(dct):
