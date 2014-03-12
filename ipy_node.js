@@ -92,7 +92,7 @@ Bridge.prototype.attach = function(index, context) {
 module.exports = Bridge;
 
 }).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/lib/bridge.js","/lib")
-},{"./kernel.js":5,"./service.js":6,"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9,"http":13,"inode":8,"q":36,"url":32}],3:[function(require,module,exports){
+},{"./kernel.js":5,"./service.js":6,"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9,"http":13,"inode":7,"q":36,"url":32}],3:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 var util = require('util');
 
@@ -191,7 +191,7 @@ $.support.cors = true;
 module.exports = new Function(content + ";IPython.$ = $;return IPython;")();
 
 }).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/lib/ipython-browserify-brfs.js","/lib")
-},{"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9,"fs":7,"jquery-browserify":35,"path":19}],5:[function(require,module,exports){
+},{"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9,"fs":8,"jquery-browserify":35,"path":19}],5:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 var IPython = require('./ipython.js')
 var fs = require('fs');
@@ -320,7 +320,7 @@ Kernel.prototype.__repr__ = function() {
 module.exports = Kernel;
 
 }).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/lib/kernel-brfs.js","/lib")
-},{"./callbacks.js":3,"./ipython.js":4,"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9,"fs":7,"inode":8,"q":36}],6:[function(require,module,exports){
+},{"./callbacks.js":3,"./ipython.js":4,"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9,"fs":8,"inode":7,"q":36}],6:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 var Q = require('q');
 var http = require('http');
@@ -373,12 +373,12 @@ module.exports = IPythonService;
 sess = new IPythonService("http://idale.local:8888");
 
 }).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/lib/service.js","/lib")
-},{"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9,"http":13,"inode":8,"q":36,"url":32}],7:[function(require,module,exports){
-
-},{"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9}],8:[function(require,module,exports){
+},{"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9,"http":13,"inode":7,"q":36,"url":32}],7:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 
-}).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../../node_modules/browserify/node_modules/browser-resolve/empty.js","/../../../node_modules/browserify/node_modules/browser-resolve")
+}).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../../node_modules/browser-resolve/empty.js","/../../../node_modules/browser-resolve")
+},{"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9}],8:[function(require,module,exports){
+
 },{"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9}],9:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 /**
@@ -3442,7 +3442,7 @@ var isArray = Array.isArray || function (xs) {
   return Object.prototype.toString.call(xs) === '[object Array]';
 };
 
-}).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../../node_modules/browserify/node_modules/querystring/decode.js","/../../../node_modules/browserify/node_modules/querystring")
+}).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../../node_modules/browserify/node_modules/querystring-es3/decode.js","/../../../node_modules/browserify/node_modules/querystring-es3")
 },{"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9}],22:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 // Copyright Joyent, Inc. and other Node contributors.
@@ -3531,7 +3531,7 @@ var objectKeys = Object.keys || function (obj) {
   return res;
 };
 
-}).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../../node_modules/browserify/node_modules/querystring/encode.js","/../../../node_modules/browserify/node_modules/querystring")
+}).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../../node_modules/browserify/node_modules/querystring-es3/encode.js","/../../../node_modules/browserify/node_modules/querystring-es3")
 },{"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9}],23:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 'use strict';
@@ -3539,7 +3539,7 @@ var objectKeys = Object.keys || function (obj) {
 exports.decode = exports.parse = require('./decode');
 exports.encode = exports.stringify = require('./encode');
 
-}).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../../node_modules/browserify/node_modules/querystring/index.js","/../../../node_modules/browserify/node_modules/querystring")
+}).call(this,require("/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../../node_modules/browserify/node_modules/querystring-es3/index.js","/../../../node_modules/browserify/node_modules/querystring-es3")
 },{"./decode":21,"./encode":22,"/Users/datacaliber/Dropbox/Projects/trading/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":18,"buffer":9}],24:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 // Copyright Joyent, Inc. and other Node contributors.
@@ -16477,22 +16477,6 @@ if (typeof ReturnValue !== "undefined") {
     };
 }
 
-// Until V8 3.19 / Chromium 29 is released, SpiderMonkey is the only
-// engine that has a deployed base of browsers that support generators.
-// However, SM's generators use the Python-inspired semantics of
-// outdated ES6 drafts.  We would like to support ES6, but we'd also
-// like to make it possible to use generators in deployed browsers, so
-// we also support Python-style generators.  At some point we can remove
-// this block.
-var hasES6Generators;
-try {
-    /* jshint evil: true, nonew: false */
-    new Function("(function* (){ yield 1; })");
-    hasES6Generators = true;
-} catch (e) {
-    hasES6Generators = false;
-}
-
 // long stack traces
 
 var STACK_JUMP_SEPARATOR = "From previous event:";
@@ -16793,6 +16777,7 @@ defer.prototype.makeNodeResolver = function () {
  * @returns a promise that may be resolved with the given resolve and reject
  * functions, or rejected by a thrown exception in resolver
  */
+Q.Promise = promise; // ES6
 Q.promise = promise;
 function promise(resolver) {
     if (typeof resolver !== "function") {
@@ -16806,6 +16791,11 @@ function promise(resolver) {
     }
     return deferred.promise;
 }
+
+promise.race = race; // ES6
+promise.all = all; // ES6
+promise.reject = reject; // ES6
+promise.resolve = Q; // ES6
 
 // XXX experimental.  This method is a way to denote that a local value is
 // serializable and should be immediately dispatched to a remote upon request,
@@ -17131,42 +17121,14 @@ Promise.prototype.isRejected = function () {
 // shimmed environments, this would naturally be a `Set`.
 var unhandledReasons = [];
 var unhandledRejections = [];
-var unhandledReasonsDisplayed = false;
 var trackUnhandledRejections = true;
-function displayUnhandledReasons() {
-    if (
-        !unhandledReasonsDisplayed &&
-        typeof window !== "undefined" &&
-        window.console
-    ) {
-        console.warn("[Q] Unhandled rejection reasons (should be empty):",
-                     unhandledReasons);
-    }
-
-    unhandledReasonsDisplayed = true;
-}
-
-function logUnhandledReasons() {
-    for (var i = 0; i < unhandledReasons.length; i++) {
-        var reason = unhandledReasons[i];
-        console.warn("Unhandled rejection reason:", reason);
-    }
-}
 
 function resetUnhandledRejections() {
     unhandledReasons.length = 0;
     unhandledRejections.length = 0;
-    unhandledReasonsDisplayed = false;
 
     if (!trackUnhandledRejections) {
         trackUnhandledRejections = true;
-
-        // Show unhandled rejection reasons if Node exits without handling an
-        // outstanding rejection.  (Note that Browserify presently produces a
-        // `process` global without the `EventEmitter` `on` method.)
-        if (typeof process !== "undefined" && process.on) {
-            process.on("exit", logUnhandledReasons);
-        }
     }
 }
 
@@ -17181,7 +17143,6 @@ function trackRejection(promise, reason) {
     } else {
         unhandledReasons.push("(no stack) " + reason);
     }
-    displayUnhandledReasons();
 }
 
 function untrackRejection(promise) {
@@ -17205,9 +17166,6 @@ Q.getUnhandledReasons = function () {
 
 Q.stopUnhandledRejectionTracking = function () {
     resetUnhandledRejections();
-    if (typeof process !== "undefined" && process.on) {
-        process.removeListener("exit", logUnhandledReasons);
-    }
     trackUnhandledRejections = false;
 };
 
@@ -17371,7 +17329,17 @@ function async(makeGenerator) {
         // when verb is "throw", arg is an exception
         function continuer(verb, arg) {
             var result;
-            if (hasES6Generators) {
+
+            // Until V8 3.19 / Chromium 29 is released, SpiderMonkey is the only
+            // engine that has a deployed base of browsers that support generators.
+            // However, SM's generators use the Python-inspired semantics of
+            // outdated ES6 drafts.  We would like to support ES6, but we'd also
+            // like to make it possible to use generators in deployed browsers, so
+            // we also support Python-style generators.  At some point we can remove
+            // this block.
+
+            if (typeof StopIteration === "undefined") {
+                // ES6 Generators
                 try {
                     result = generator[verb](arg);
                 } catch (exception) {
@@ -17383,6 +17351,7 @@ function async(makeGenerator) {
                     return when(result.value, callback, errback);
                 }
             } else {
+                // SpiderMonkey Generators
                 // FIXME: Remove this case when SM does ES6 generators.
                 try {
                     result = generator[verb](arg);
